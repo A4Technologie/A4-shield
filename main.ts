@@ -81,9 +81,8 @@ namespace robot
     //% speed.shadow="speedPicker"
     //% weight=100
      //% subcategory=Moteurs
-    export function drive(move:RobotMoves, speed: number) { void
+    export function drive(move:RobotMoves, speed: number) : void
     {
-        motor(BBMotor.Both, speed);
      
         let forward = (speed >= 0);
         let absSpeed = Math.abs(speed);
@@ -113,8 +112,6 @@ namespace robot
 
     /**
       * Drive robot forward (or backward) at speed for milliseconds.
-      * @param speed speed of motor between -1023 and 1023. eg: 600
-      * @param milliseconds duration in milliseconds to drive forward for, then stop. eg: 400
       */
     //% blockId="bitbot_motor_forward_milliseconds" block="$move à la vitesse $speed\\% pendant %milliseconds|(ms)"
     //% speed.shadow="speedPicker"
@@ -130,12 +127,9 @@ namespace robot
                                                            
                                                            
                                                                /**
-      * Drive robot forward (or backward) at speed for milliseconds.
-      * @param speed speed of motor between -1023 and 1023. eg: 600
-      * @param milliseconds duration in milliseconds to drive forward for, then stop. eg: 400
+
       */
-    //% blockId="bitbot_motor_forward_milliseconds" block="Arrêter les moteurs"
-    //% speed.shadow="speedPicker"
+    //% blockId="bitbot_motor_stop" block="Arrêter les moteurs"
     //% weight=95
     //% subcategory=Motors
     export function stopMotor(): void
