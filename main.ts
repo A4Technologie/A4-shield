@@ -4,11 +4,11 @@
   */
 enum BBMotor
 {
-    //% block="left"
+    //% block="gauche"
     Left,
-    //% block="right"
+    //% block="droit"
     Right,
-    //% block="both"
+    //% block="les deux"
     Both
 }
 
@@ -17,100 +17,17 @@ enum BBMotor
   */
 enum BBRobotDirection
 {
-    //% block="left"
+    //% block="à gauche"
     Left,
-    //% block="right"
+    //% block="à droite"
     Right
 }
 
-/**
-  * Values for buzzer. On or Off
-  */
-enum BBBuzz
-{
-    //% block="on"
-    On,
-    //% block="off"
-    Off
-}
-
-/**
-  * Enumeration of line sensors.
-  */
-enum BBLineSensor
-{
-    //% block="left"
-    Left,
-    //% block="right"
-    Right
-}
-
-/**
-  * Enumeration of light sensors.
-  */
-enum BBLightSensor
-{
-    //% block="left"
-    Left,
-    //% block="right"
-    Right
-}
-
-/**
- * Ping unit for sensor.
- */
-enum BBPingUnit
-{
-    //% block="cm"
-    Centimeters,
-    //% block="inches"
-    Inches,
-    //% block="μs"
-    MicroSeconds
-}
-
-/**
-  * Update mode for LEDs
-  * setting to Manual requires show LED changes blocks
-  * setting to Auto will update the LEDs everytime they change
-  */
-enum BBMode
-{
-    Manual,
-    Auto
-}
-
-/**
-  * Pre-Defined LED colours
-  */
-enum BBColors
-{
-    //% block=red
-    Red = 0xff0000,
-    //% block=orange
-    Orange = 0xffa500,
-    //% block=yellow
-    Yellow = 0xffff00,
-    //% block=green
-    Green = 0x00ff00,
-    //% block=blue
-    Blue = 0x0000ff,
-    //% block=indigo
-    Indigo = 0x4b0082,
-    //% block=violet
-    Violet = 0x8a2be2,
-    //% block=purple
-    Purple = 0xff00ff,
-    //% block=white
-    White = 0xffffff,
-    //% block=black
-    Black = 0x000000
-}
 
 /**
  * Custom blocks
  */
-//% weight=50 color=#e7660b icon="\uf1b9"
+//% weight=50 color=#0000FF icon="\A4Logo.jpg"
 namespace bitbot
 {
     let neoStrip: neopixel.Strip;
